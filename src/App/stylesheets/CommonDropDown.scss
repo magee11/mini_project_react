@@ -1,0 +1,55 @@
+@import "variable.scss";
+
+.SelectField {
+    width: 446px;
+    height: 56px;
+    flex-grow: 0;
+    // margin-top: 2rem;
+    border-radius: 10px;
+
+    // border: solid 1px #b1b5c3;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &_Placeholder {
+        width: 163px;
+        height: 100%;
+        flex-grow: 0;
+        font-family: DMSans-medium, ;
+        font-size: 16px;
+        // font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        // padding: 20px;
+        color: $font-heading-color;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        
+    }
+
+    &_Arrow {
+        width: 30px;
+        float: right;
+        height: 30px;
+        margin-top: 1.5rem;
+        margin-right: 3rem;
+        flex-grow: 0;
+        border: none;
+
+    }
+}
+
+@media only screen and (max-width: 390px){
+
+    .SelectField{
+
+        &_Arrow{
+            width: 24px;
+            margin-right:22rem;
+        }
+    }
+    
+}

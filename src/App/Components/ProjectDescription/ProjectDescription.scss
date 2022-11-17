@@ -1,0 +1,78 @@
+@import "../../stylesheets/variable.scss";
+
+.ProjectDescription_Data {
+  width: 41rem;
+  height: 100%;
+  margin: 26px 0 0 0;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.14);
+  background-color: $box-background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ProjectDescription-All {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: -1;
+}
+
+.ProjectDescription {
+  display: flex;
+  justify-content: space-between;
+
+  &_Title {
+    font-family: DMSans;
+    font-size: 16px;
+    font-stretch: normal;
+    margin-bottom: 2.5rem;
+    font-style: normal;
+    color: rgba(36, 39, 49, 0.7);
+  }
+
+  &_Calculation {
+    font-family: DMSans-bold;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: right;
+    color: $font-heading-color;
+  }
+}
+
+
+
+
+
+.Report_Status{
+  text-align: center;
+  font-size: 18px;
+  font-family: DMSans;
+}
+
+
+@media only screen and (max-width:390px)
+{
+  .ProjectDescription_Data
+  {
+    width:316px;
+   
+  }
+  .ProjectDescription-All {
+   flex-wrap: wrap;
+  }
+  .ProjectDescription{
+
+    &_Title{
+      
+      font-size: 12px;
+    }
+
+    &_Calculation{
+      font-size: 12px;
+    }
+  }
+}

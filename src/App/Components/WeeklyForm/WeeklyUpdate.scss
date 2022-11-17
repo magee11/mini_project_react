@@ -1,0 +1,458 @@
+@import "../../stylesheets/variable.scss";
+
+.WeeklyUpdate {
+  width: 60vw;
+  height: 100%;
+  flex-grow: 0;
+  justify-content: center;
+  position: relative;
+  //   z-index: 1;
+  margin: 8rem 0 0 0;
+  padding: 40px 64px 40px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.14);
+  background-color:$box-background-color;
+}
+
+.WeeklyReport_Form {
+  position: absolute;
+  width: 100%;
+  max-width: 144rem;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -6rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.WeeklyUpdate_Head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_Title {
+    width: 237px;
+    height: 42px;
+    flex-grow: 0;
+    margin: 0 46px 40px 69px;
+    font-family: DMSans-bold;
+    font-size: 32px;
+    // font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+}
+
+.WeeklyUpdate_Overalldetail {
+  &_Title {
+    width: 156px;
+    height: 31px;
+    flex-grow: 0;
+    margin-left: 3rem;
+    font-family: DMSans-bold;
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+
+  &_Field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-top: 2rem;
+
+    &_All {
+      margin-top: 1rem;
+
+      &_label {
+        width: 160px;
+        height: 21px;
+        flex-grow: 0;
+        font-family: DMSans-medium;
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: $font-heading-color;
+      }
+
+      &_input {
+        width: 446px;
+        height: 56px;
+        font-size: 18px;
+        font-family: DMSans;
+        flex-grow: 0;
+        padding-left: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+        border: solid 1px #b1b5c3;
+      }
+      // &_inputspl{
+      //     width: 446px;
+      //     height: 56px;
+      //     font-size: 18px;
+      //     font-family: DMSans;
+      //     flex-grow: 0;
+      //     margin-top: 2rem;
+      //     border-radius: 10px;
+      //     border: solid 1px #b1b5c3;
+      // }
+
+      &_input::placeholder {
+        width: 100%;
+        height: 21px;
+        flex-grow: 0;
+        margin-right: 0;
+        font-family: DMSans;
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        // padding: 20px;
+        color: #777e90;
+      }
+    }
+  }
+}
+
+.WeeklyUpdate_Weeklydetail {
+  margin-top: 3rem;
+
+  &_Title {
+    width: 20rem;
+    height: 31px;
+    flex-grow: 0;
+    margin-left: 3rem;
+    font-family: DMSans-bold;
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+
+  &_Field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-top: 2rem;
+
+    &_All {
+      margin-top: 1rem;
+
+      &_label {
+        width: 160px;
+        height: 21px;
+        font-family: DMSans-medium;
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: $font-heading-color;
+      }
+
+      &_input {
+        width: 446px;
+        height: 56px;
+        flex-grow: 0;
+        font-size: 18px;
+        font-family: DMSans;
+        // font-weight: bold;
+        padding-left: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+        border: solid 1px #b1b5c3;
+      }
+
+      &_input::placeholder {
+        width: 100%;
+        height: 21px;
+        flex-grow: 0;
+
+        font-family: DMSans;
+        font-size: 16px;
+        // font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+
+        // padding: 20px;
+        color: #777e90;
+      }
+    }
+  }
+}
+
+.WeeklyUpdate_Otherdetail {
+  margin-top: 3rem;
+
+  &_Title {
+    width: 156px;
+    height: 31px;
+    flex-grow: 0;
+    margin-left: 3rem;
+    font-family: DMSans-bold;
+    font-size: 24px;
+    // font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+
+  &_Field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-top: 2rem;
+
+    &_All {
+      margin-top: 1rem;
+
+      &_label {
+        width: 160px;
+        height: 21px;
+        flex-grow: 0;
+
+        margin-top: 2rem;
+        font-family: DMSans-medium;
+        font-size: 16px;
+        // font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color:$font-heading-color;
+      }
+
+      &_input {
+        width: 924px;
+        height: 56px;
+        font-size: 18px;
+        font-family: DMSans;
+        flex-grow: 0;
+        padding-left: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+        border: solid 1px #b1b5c3;
+      }
+
+      &_input::placeholder {
+        width: 100%;
+        height: 21px;
+        flex-grow: 0;
+        font-family: DMSans;
+        font-size: 16px;
+        // font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        // padding: 20px;
+        color: #777e90;
+      }
+    }
+  }
+}
+
+.WeeklyUpdate_SubmitButton {
+  display: flex;
+  width: 104rem;
+  height: 72px;
+  margin-top: 4rem;
+  margin-left: -1rem;
+  align-items: center;
+
+  &_Update {
+    width: 137px;
+    height: 56px;
+    flex-grow: 0;
+    margin-top: 3rem;
+    margin-left: 65rem;
+    cursor: pointer;
+    padding: 18px 40px 19px;
+    background-color: $create-button-color;
+    font-family: DMSans-bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 1rem;
+    // font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    float: right;
+    color: rgba(255, 255, 255, 0.99);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ErrorMessage {
+  color:$font-danger-color;
+  font-family: DMSans;
+  font-size: 16px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.Highlights {
+  width: 17rem;
+  height: 2rem;
+  font-family: DMSans-medium;
+  font-size: 14px;
+  // font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #242731;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  background-color: #e5eefb;
+}
+
+.Highlights2 {
+  width: 13rem;
+  height: 2rem;
+  font-family: DMSans-medium;
+  font-size: 14px;
+  // font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #242731;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  background-color: #e5eefb;
+}
+
+@media only screen and (max-width: 390px) {
+  .WeeklyUpdate {
+    width: 340px;
+    height: 100%;
+    padding-left: 0%;
+  }
+
+  .WeeklyUpdate_Head {
+    display: inline;
+
+    &_Title {
+      width: 148px;
+      font-size: 20px;
+      margin-bottom: 2rem;
+    }
+  }
+  .WeeklyUpdate_Overalldetail {
+    &_Title {
+      font-size: 16px;
+    }
+    &_Field {
+      margin-top: 0%;
+      &_All {
+        &_label {
+          font-size: 14px;
+        }
+        &_input {
+          width: 296px;
+          height: 52px;
+        }
+      }
+    }
+  }
+  .WeeklyUpdate_Weeklydetail {
+    &_Title {
+      font-size: 16px;
+    }
+    &_Field {
+      margin-top: 0%;
+      &_All {
+        &_label {
+          font-size: 14px;
+        }
+        &_input {
+          width: 296px;
+          height: 52px;
+        }
+      }
+    }
+  }
+
+  .WeeklyUpdate_Otherdetail {
+    &_Title {
+      font-size: 16px;
+    }
+    &_Field {
+      margin-top: 0%;
+      &_All {
+        &_label {
+          font-size: 14px;
+        }
+        &_input {
+          width: 296px;
+          height: 52px;
+        }
+      }
+    }
+  }
+
+  .Highlights {
+    width: 15rem;
+    height: 25px;
+    font-size: 10px;
+  }
+  .Highlights2 {
+    width: 15rem;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .WeeklyUpdate_SubmitButton{
+    text-align: center;
+
+    &_Update{
+      width:120px;
+      height: 56px;
+      margin-left: 7rem;
+      padding: 0%;
+      
+    }
+  }
+}

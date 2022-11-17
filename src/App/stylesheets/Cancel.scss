@@ -1,0 +1,29 @@
+@import url(variable.scss);
+
+.Cancelbtn {
+  width: 135px;
+  height: 56px;
+  flex-grow: 0;
+  font-family: DMSans-bold;
+  font-size: 16px;
+  // font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  margin-top: 3rem;
+  margin-left: 4rem;
+  padding: 19px 40px 18px;
+  border: solid 1px #2f80ed;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #2f80ed;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 390px) {
+  .Cancelbtn {
+    width: 120px;
+    height: 56;
+    padding: 0%;
+    
+  }
+}

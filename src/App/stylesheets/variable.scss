@@ -1,0 +1,22 @@
+//colors
+$backgroundcolor: #f4f5f9;
+$box-background-color: #fff;  
+$create-button-color: #2f80ed;
+$inprogress-color: #947e00;
+$risk-color: #ac0404;
+$font-danger-color: #d80205;
+$font-ok-color: #00a911;
+$font-heading-color: #242731;
+$data-numbers-color: rgba(36, 39, 49, 0.87);
+@font-face {
+  font-family: DMSans;
+  src: url(./../Assests/fonts/DM_Sans/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: DMSans-medium;
+  src: url(./../Assests/fonts/DM_Sans/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: DMSans-bold;
+  src: url(./../Assests/fonts/DM_Sans/DMSans-Bold.ttf);
+}

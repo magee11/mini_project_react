@@ -1,0 +1,54 @@
+@import url(../../stylesheets/variable.scss);
+.filter-optn {
+  position: absolute;
+  width: 18.2rem;
+  height: 21.7rem;
+  background-color: black;
+  z-index: 1;
+  border-radius: 1.6rem;
+  list-style: none;
+  text-align: center;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  margin-top: 28rem;
+  &_lists {
+    font-family: DMSans;  
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 19px 16px 15.5px;
+    color: rgba(36, 39, 49, 0.7);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline solid 1px #2f80ed;
+      color: #2f80ed;
+    }
+  }
+}
+@media (max-width: 444px) {
+  .filter-optn {
+    position: absolute;
+    width: 14.2rem;
+    height: 16.9rem;
+    margin-top: 23rem;
+    margin-left: -1.7rem;
+
+    &_lists {
+      font-family: DMSans;
+      font-size: 12px;
+      text-align: left;
+      margin: 1.5rem;
+      color: rgba(36, 39, 49, 0.7);
+
+      &:hover {
+        text-decoration: underline 3px solid #2f80ed;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .filter-optn {
+   height: 18.5rem;
+  }
+}

@@ -1,0 +1,329 @@
+@import "../../stylesheets/variable.scss";
+
+.ForUpdate {
+  display: flex;
+  height: 86px;
+  justify-content: space-between;
+
+  &_Year {
+    display: flex;
+
+    &_Month {
+      width: 116px;
+      height: 46px;
+      flex-grow: 0;
+      margin: 23px 16px 0px 0;
+      border-radius: 6px;
+      border: solid 1px $create-button-color;
+      display: flex;
+      cursor: pointer;
+      justify-content: space-between;
+
+      &_Placeholder {
+        width: 32px;
+        height: 18px;
+        flex-grow: 0;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+        font-family: DMSans;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: $create-button-color;
+      }
+
+      &_DropDown {
+        width: 25px;
+        height: 25px;
+        flex-grow: 0;
+        // margin-left: 3rem;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+      }
+      &_All {
+        width: 16rem;
+        height: 46px;
+        flex-grow: 0;
+        border-radius: 10px;
+        margin: 23px 16px 26px 0;
+        cursor: pointer;
+        font-family: DMSans-medium;
+        font-size: 14px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        padding: 9px 24px;
+
+        border: solid 1px $create-button-color;
+        background-color: $box-background-color;
+        color:$create-button-color;
+      }
+    }
+
+    &_Week {
+      width: 314px;
+      height: 46px;
+      flex-grow: 0;
+      margin: 23px 86px 26px 16px;
+
+      border-radius: 8px;
+      border: solid 1px $create-button-color;
+      display: flex;
+
+      box-sizing: content-box;
+
+      &_btn {
+        width: 330px;
+        height: 46px;
+        flex-grow: 0;
+        margin-top: 2.2rem;
+        border-radius: 8px;
+        border: solid 1px $create-button-color;
+
+        box-sizing: content-box;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_1 {
+          width: 7rem;
+          height: 3.8rem;
+          flex-grow: 0;
+          margin-left: 0.5rem;
+          font-family: DMSans-medium;
+          font-size: 14px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          border: none;
+          border-radius: 1rem;
+          text-align: center;
+          cursor: pointer;
+
+          background-color: $box-background-color;
+          color: rgb(123, 117, 117);
+        }
+
+        &_1:focus {
+          color: $box-background-color;
+          background-color: $create-button-color;
+        }
+
+        &_2 {
+          width: 7rem;
+          height: 3.8rem;
+          margin-left: 0.5rem;
+          flex-grow: 0;
+          font-family: DMSans-medium;
+          font-size: 14px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          border: none;
+          border-radius: 1rem;
+          text-align: center;
+          background-color: $box-background-color;
+          cursor: pointer;
+          color: rgb(123, 117, 117);
+        }
+        &_2:focus {
+          color: $box-background-color;
+          background-color: $create-button-color;
+        }
+
+        &_3 {
+          width: 7rem;
+          height: 3.8rem;
+          margin-left: 0.5rem;
+          flex-grow: 0;
+          font-family: DMSans-medium;
+          font-size: 14px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          border: none;
+          cursor: pointer;
+          border-radius: 1rem;
+          text-align: center;
+          background-color: $box-background-color;
+          color: rgb(123, 117, 117);
+        }
+        &_3:focus {
+          color:$box-background-color;
+          background-color:$create-button-color;
+        }
+
+        &_4 {
+          width: 7rem;
+          height: 3.8rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          flex-grow: 0;
+          font-family: DMSans-medium;
+          font-size: 14px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          border: none;
+          border-radius: 1rem;
+          text-align: center;
+          cursor: pointer;
+
+          background-color: $box-background-color;
+          color: rgb(123, 117, 117);
+        }
+        &_4:focus {
+          color: $box-background-color;
+          background-color:$create-button-color;
+        }
+      }
+    }
+  }
+}
+
+.Month {
+  width: 116px;
+  height: 270px;
+  flex-grow: 0;
+  padding: 8px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.14);
+  background-color: $box-background-color;
+  z-index:3;
+  position: absolute;
+
+  &_All{
+      font-size: 16px;
+      font-family: DMSans;
+      cursor: pointer;
+
+  }
+  &_All:hover{
+    color: $create-button-color;
+    font-family: DMSans-bold;
+    
+
+  }
+}
+
+.ForUpdate_btn {
+  float: right;
+}
+
+.ForUpdate_btn_1 {
+  width: 97px;
+  height: 46px;
+  flex-grow: 0;
+  font-family: DMSans-bold;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  margin: 23px 2px 26px 35px;
+  padding: 14px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color:$box-background-color;
+
+  background-color:$create-button-color;
+}
+
+@media only screen and (max-width: 390px) {
+  .ForUpdate {
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &_Year {
+      
+      &_Month {
+        width: 116px;
+        height: 32px;
+
+        &_Placeholder {
+          margin-top: 0.5rem;
+        }
+
+        &_DropDown {
+          width: 20px;
+          height: 20px;
+          margin-top: 0.7rem;
+        }
+      }
+
+      &_Week {
+        &_btn {
+          width: 250px;
+          height: 32px;
+          margin-top: 2.2rem;
+
+          &_1 {
+            height: 13px;
+            margin-bottom: 0.5rem;
+
+            // left: 13px;
+            // top: 9.7px;
+          }
+          &_1:focus{
+            height:2.3rem;
+          margin-top: 0.5rem ;      
+            }
+          &_2 {
+            height: 13px;
+            margin-bottom: 0.5rem;
+      
+
+            // left: 13px;
+            // top: 9.7px;
+          }
+          &_2:focus{
+            height:2.3rem;
+          margin-top: 0.5rem ;      
+            }
+          &_3 {
+            height: 13px;
+            margin-bottom: 0.5rem;
+
+            // left: 13px;
+            // top: 9.7px;
+          }
+          &_3:focus{
+            height:2.3rem;
+          margin-top: 0.5rem ;      
+            }
+          &_4 {
+            height: 13px;
+            margin-bottom: 0.5rem;
+
+            // left: 13px;
+            // top: 9.7px;
+          }
+          &_4:focus{
+            height:2.3rem;
+          margin-top: 0.5rem ;      
+            }
+        }
+      }
+    }
+  }
+  .ForUpdate_btn_1{
+    width: 78px;
+    height: 32px;
+  }
+}

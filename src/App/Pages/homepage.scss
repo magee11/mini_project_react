@@ -1,0 +1,88 @@
+@import "../stylesheets/variable.scss";
+
+.home-main-container {
+  display: block;
+  flex-direction: column;
+  background-color: $backgroundcolor;
+  height: 100%;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 144rem;
+
+  &__home-container {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  &__tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__project_idividual_table {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    margin-bottom: 3rem;  
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-main-container {
+    margin: 0;
+
+    &__home-container {
+      width: 100%;
+    }
+    &__project_idividual_table {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 444px) {
+  .project_idividual_table {
+    display: flex;
+    margin: 0;
+  }
+  .tiles-container {
+    display: flex;
+    justify-content: center;
+  }
+  .home-main-container {
+    background-color: #e5e5e5;
+    width: 100%;
+    max-width: 36rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-container {
+    width: 36rem;
+  }
+}
+@media (max-width: 320px) {
+  .home-main-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tiles-container {
+    display: flex;
+    margin-left: 7.5rem;
+  }
+  .projectdetails-main-container {
+    width: 34.5rem;
+    height: 23.3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.4rem 1.6rem;
+    border-radius: 1.6rem;
+    background-color: #fff;
+  }
+}

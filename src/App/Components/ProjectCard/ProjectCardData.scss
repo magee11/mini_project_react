@@ -1,0 +1,142 @@
+@import url(../../stylesheets/variable.scss);
+
+.ProjectCard-Contain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ProjectCard {
+  width: 25rem;
+  height: 106px;
+  flex-grow: 0;
+  margin-top: 3rem;
+  padding: 24px 78px 24px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.14);
+  background-color: #fffbfb;
+  display: flex;
+
+  &_avatar {
+    width: 52px;
+    height: 52px;
+    flex-grow: 0;
+    margin: 4px 24px 4px 0;
+    padding: 14px;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1eeff;
+  }
+}
+
+.ProjectCard {
+  &_detail {
+    &_Count {
+      width: 41px;
+      height: 36px;
+      font-family: DMSans-bold;
+      font-size: 24px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(36, 39, 49, 0.87);
+    }
+
+    &_Name {
+      width: 107px;
+      height: 24px;
+      flex-grow: 0;
+
+      font-family: DMSans;
+      font-size: 16px;
+      // font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(36, 39, 49, 0.87);
+    }
+  }
+}
+
+.ProjectCard-Logo_delay {
+  width: 70px;
+
+  height: 70px;
+
+  transform: rotate(-126deg);
+}
+
+.ProjectCard_detail-Count_delay {
+  width: 52px;
+  height: 36px;
+  flex-grow: 0;
+  margin-left: 2rem;
+  font-family: DMSans-bold;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ac0404;
+}
+
+.ProjectCard_detail-Name_delay {
+  width: 42px;
+  height: 24px;
+  flex-grow: 0;
+  margin-left: 2rem;
+  font-family: DMSans;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(36, 39, 49, 0.87);
+}
+
+@media only screen and (max-width: 768px) {
+  .ProjectCard-Contain {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+     margin-left: -2rem;
+     
+  }
+
+  .ProjectCard{
+    width:212px;
+    height: 94px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    padding-top:2rem;
+    
+    &_detail {
+
+      &_Count {
+        width: 27px;
+        height: 36px;
+        font-size: 16px;
+      }
+      &_Name{
+        width:63px;
+        margin-top: 1rem;
+        
+      }
+    }
+  }
+  .ProjectCard-Logo_delay{
+    height:max-content
+  }
+}

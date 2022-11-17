@@ -1,0 +1,174 @@
+@import "variable.scss";
+
+.option {
+  width: 446px;
+  height: 176px;
+  flex-grow: 0;
+
+  padding: 16px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.14);
+  background-color: $box-background-color;
+  margin-left: -1rem;
+  z-index: 3;
+  position: absolute;
+
+  &_title {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &_performance {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &_count {
+        width: 6px;
+        height: 21px;
+        flex-grow: 0;
+        margin-left: 2rem;
+        margin-right: 1rem;
+        font-family: DMSans-bold;
+        font-size: 16px;
+        // font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: $font-heading-color;
+        align-items: center;
+      }
+
+      &_Plus {
+        width: 24px;
+        height: 24px;
+        flex-grow: 0;
+        margin-left: 2rem;
+        object-fit: contain;
+      }
+
+      &_Minus {
+        width: 23px;
+        height: 24px;
+        flex-grow: 0;
+        border: 1px solid $create-button-color;
+        border-radius: 0.8rem;
+        color:$create-button-color;
+        font-size: 10px;
+        background-color:$box-background-color;
+      }
+    }
+
+    &_Design {
+      width: 67px;
+      height: 21px;
+      flex-grow: 0;
+
+      font-family: DMSans-medium;
+      font-size: 16px;
+      // font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: $font-heading-color;
+    }
+
+    &_FrontEnd {
+      width: 154px;
+      height: 21px;
+      flex-grow: 0;
+
+      font-family: DMSans-medium;
+      font-size: 16px;
+      // font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color:$font-heading-color;
+    }
+
+    &_BackEnd {
+      width: 154px;
+      height: 21px;
+      flex-grow: 0;
+
+      font-family: DMSans;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: $font-heading-color;
+    }
+
+    &_QA {
+      width: 24px;
+      height: 21px;
+      flex-grow: 0;
+
+      font-family: DMSans-medium;
+      font-size: 16px;
+      // font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color:$font-heading-color;
+    }
+
+    
+
+    
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .option {
+    width: 220px;
+    height: 158px;
+    margin-left: 8rem;
+
+    &_title {
+      &_Design {
+        font-size: 12px;
+      }
+      &_FrontEnd {
+        font-size: 12px;
+      }
+      &_BackEnd {
+        font-size: 12px;
+      }
+      &_QA {
+        font-size: 12px;
+      }
+
+      &_performance {
+        width: 4rem;
+        justify-content: center;
+        &_Plus {
+          width: 16px;
+          height: 16px;
+        }
+
+        &_Minus {
+          width: 16px;
+          height: 16px;
+        }
+        &_count{
+            padding-left: 1rem;
+            font-size: 14px;
+            margin: 0%;
+        }
+      }
+    }
+  }
+}

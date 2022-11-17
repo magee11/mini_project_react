@@ -1,0 +1,26 @@
+@import "variable.scss";
+
+
+.Updatebtn {
+    width: 97px;
+    height: 46px;
+    flex-grow: 0;
+    font-family: DMSans-bold;
+    font-size: 16px;
+    // font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    margin: 23px 2px 26px 35px;
+    padding: 14px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color:$box-background-color;
+    
+    background-color: $create-button-color;
+}
+

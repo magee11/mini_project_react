@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%; // 1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow:visible;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* breakpoints 
+  320px - 720px - For mobile.
+  721px - 1023px - For tab.
+  1024px - 1440px - For Desktop.
+*/
+@media all and (min-width: 1600px) {
+  // define your rem value
+}
+
+@media all and (min-width: 1200px) {
+  // define your rem value
+}
+
+@media all and (min-width: 992px) {
+  // define your rem value
+}
+
+@media all and (max-width: 768px) {
+  // define your rem value
+  // html {
+  //   font-size: 50%; // 1 rem = 8px; 8px/16px = 50%
+  // }
+  *::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    display: none !important;
+    background: transparent;
+    -webkit-appearance: none;
+  }
+}
+
+// @media all and (max-width: 360px) and (min-width: 768px) {
+// define your rem value
+// html {
+//   font-size: 56.25%; // 1 rem = 9px; 8px/16px = 50%
+// }
+// }
+
+@media all and (max-width: 360px) {
+  // define your rem value
+  html {
+    font-size: 50%; // 1 rem = 8px; 8px/16px = 50%
+  }
+}
+
+/* breakpoints - retina */
+@media (-webkit-min-device-pixel-ratio: 1.5),
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3/2),
+  (min-resolution: 1.5dppx) {
+  // define your rem value
+}
